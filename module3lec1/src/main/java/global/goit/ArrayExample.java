@@ -22,6 +22,12 @@ public class ArrayExample {
         // при зазначенні неіснуючого індексу отримаємо помилку і програма "впаде"
 //        System.out.println("integerArray [3]: " + integerArray[3]);
 //        System.out.println("integerArray [-1]: " + integerArray[-1]);
+
+        String[][] arrString = new String[5][2];
+        arrString[0][0] = "0|0";
+        arrString[0][1] = "0|1";
+        arrString[4][1] = "4|1";
+
     }
 
 }
