@@ -7,17 +7,16 @@ public class SwitchCaseExample {
     public static void main(String[] args) {
 
         String guestRoom = "Room-";
+        Scanner scanner = new Scanner(System.in);
+
         System.out.print("Enter you room number: ");
-        int roomNumber = new Scanner(System.in).nextInt();
+        int roomNumber = scanner.nextInt();
 
         guestRoom += roomNumber;
 
         String level = switch (guestRoom) {
-            case "Room-11" -> "1st";
-            case "Room-12" -> "1st";
-            case "Room-13" -> "1st";
-            case "Room-22" -> "2nd";
-            case "Room-23" -> "2nd";
+            case "Room-11", "Room-12", "Room-13" -> "1st";
+            case "Room-22", "Room-23" -> "2nd";
             case "Room-31" -> "3nd";
             default -> null;
         };
