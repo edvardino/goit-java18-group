@@ -43,7 +43,7 @@ public class MathClassMethodsExample {
 
 
         // повертає менше з-поміж чисел
-        int minimum = Math.min(34, 65);
+        int minimum = Math.min(65, 34);
         System.out.println("Minimum for 34, 65 is " + minimum + "\n");
 
 
@@ -54,9 +54,11 @@ public class MathClassMethodsExample {
 
         // випадкове число
         double random = Math.random();
-        System.out.println("Random value: " + random + "\n");
+        int randomIntValue = (int) (random * 3 + 1);
+        System.out.println("Random int value from 1 to 3: " + randomIntValue + "\n");
 
 
+        // константи з математики
         System.out.println("PI = " + Math.PI);
         System.out.println("E = " + Math.E);
         System.out.println("TAU = " + Math.TAU + "\n");
@@ -67,9 +69,15 @@ public class MathClassMethodsExample {
         System.out.println("Log10(100) = " + log10 + "\n");
 
 
+        // округлення в меншу сторону
         System.out.println("Floor of 23.56 = " + Math.floor(23.56));
+        // округлення в більшу сторону
         System.out.println("Ceil of 23.43 = " + Math.ceil(23.43));
 
+
+        // квадратний корінь від числа
+        double sqrt = Math.sqrt(9);
+        System.out.println("Square root from 9: " + sqrt);
 
         // Є багато тригонометричних методів
 //        Math.sin()

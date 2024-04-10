@@ -13,7 +13,9 @@ public class TakeLastArrayElementExample {
 
         int argsSize = args.length;
 
-        String lastArgument = args[argsSize - 1];
+        int lastElementIndex = argsSize - 1;
+
+        String lastArgument = args[lastElementIndex];
 
         System.out.println("Last element in the arguments array: " + lastArgument);
 

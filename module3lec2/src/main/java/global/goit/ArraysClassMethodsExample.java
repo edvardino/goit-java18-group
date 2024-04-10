@@ -49,11 +49,11 @@ public class ArraysClassMethodsExample {
     }
 
     public static void copyOf(String[] array) {
-        System.out.println("Original array: " + Arrays.toString(array));
+        System.out.println("Original array:\t" + Arrays.toString(array));
 
         String[] copiedArray = Arrays.copyOf(array, array.length);
 
-        System.out.println("Copied array: " + Arrays.toString(copiedArray));
+        System.out.println("Copied array:\t" + Arrays.toString(copiedArray));
     }
 
     public static void copyOfRange(String[] array) {
@@ -61,7 +61,7 @@ public class ArraysClassMethodsExample {
 
         String[] range = Arrays.copyOfRange(array, 2, 4);
 
-        System.out.println("Range 1-4 from array: " + Arrays.toString(range));
+        System.out.println("Range 2-4 from array: " + Arrays.toString(range));
     }
 
     public static void equals(String[] array) {
@@ -81,6 +81,13 @@ public class ArraysClassMethodsExample {
         Arrays.fill(lines, "rt");
 
         System.out.println("Filled array: " + Arrays.toString(lines));
+
+
+        String[][] multiDimensional = new String[2][3];
+
+        Arrays.fill(multiDimensional, new String[] {"rt1", "rt2", "er"});
+
+        System.out.println("Filled multidimensional array: " + Arrays.deepToString(multiDimensional));
     }
 
     public static void mismatch() {
@@ -102,7 +109,7 @@ public class ArraysClassMethodsExample {
 
         System.out.println("Sorted array: " + Arrays.toString(array));
 
-        int index = Arrays.binarySearch(array, "e");
+        int index = Arrays.binarySearch(array, "bb");
 
         System.out.println("Found index: " + index);
 
